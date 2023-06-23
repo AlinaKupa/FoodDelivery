@@ -84,7 +84,7 @@ function saveCompaniesToDatabase($companies)
     $conn = new mysqli('localhost', 'root', 'd@tab@seadmin257', 'food_delivery');
 
     if ($conn->connect_error) {
-        die("Помилка підключення до бази даних: " . $conn->connect_error);
+        die("Database connection error: " . $conn->connect_error);
     }
 
     $insertedIds = [];
